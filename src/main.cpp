@@ -7,15 +7,15 @@
 #define FIRMWARE_VERSION "0.0.0" // Update this for new firmware versions
 
 // Wi-Fi credentials
-const char* ssid = "IOT-DEV";
-const char* password = "sensor@wifi-data";
+const char* ssid = "your ssid";
+const char* password = "your password";
 
 WiFiServer tcpServer(90); // Create TCP server on port 90
 int updateFlag = 0;
 String currentVersion = FIRMWARE_VERSION; // Store the current firmware version
 
 // Google Drive direct download link for the firmware file
-const char* firmwareURL = "https://drive.google.com/uc?export=download&id=1fRT7AZGzJGqFSsm9ErCups0gradgv3yi";
+const char* firmwareURL = "your drive link ";
 
 // Function declaration
 void performOTAUpdate();
